@@ -30,7 +30,11 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/ubuntu/moedor-corrigido/venv"
+=======
+set -gx VIRTUAL_ENV "/home/ubuntu/hotmart-overlay-system/venv"
+>>>>>>> 3f8a76235925c939e56a3ac42cec5bde9527eaf5
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

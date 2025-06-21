@@ -52,6 +52,10 @@ def health_check():
     return {'status': 'ok', 'message': 'Hotmart Overlay System is running'}, 200
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     port = int(os.environ.get('PORT', 5001))
     app.run(host='0.0.0.0', port=port, debug=True)
+=======
+    app.run(host='0.0.0.0', port=5000, debug=True)
+>>>>>>> 3f8a76235925c939e56a3ac42cec5bde9527eaf5
 

@@ -8,7 +8,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/home/ubuntu/moedor-corrigido/venv"
+=======
+setenv VIRTUAL_ENV "/home/ubuntu/hotmart-overlay-system/venv"
+>>>>>>> 3f8a76235925c939e56a3ac42cec5bde9527eaf5
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

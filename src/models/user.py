@@ -18,6 +18,7 @@ class User(db.Model):
             'email': self.email
         }
 
+<<<<<<< HEAD
 class Member(db.Model):
     """Modelo para membros do MOEDOR (compradores/assinantes)"""
     id = db.Column(db.Integer, primary_key=True)
@@ -47,13 +48,19 @@ class Member(db.Model):
         }
 
 # Manter modelos antigos para compatibilidade
+=======
+>>>>>>> 3f8a76235925c939e56a3ac42cec5bde9527eaf5
 class Affiliate(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     affiliate_code = db.Column(db.String(50), unique=True, nullable=False)
     name = db.Column(db.String(200), nullable=False)
     first_sale_date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     total_sales = db.Column(db.Integer, default=1)
+<<<<<<< HEAD
     is_new = db.Column(db.Boolean, default=True)
+=======
+    is_new = db.Column(db.Boolean, default=True)  # Para controlar se já foi exibido como novo
+>>>>>>> 3f8a76235925c939e56a3ac42cec5bde9527eaf5
     
     def __repr__(self):
         return f'<Affiliate {self.name} ({self.affiliate_code})>'
