@@ -15,6 +15,45 @@
             box-sizing: border-box;
         }
 
+        /* Correção CSS para botões clicáveis */
+
+/* Garantir que os botões estejam acima de outros elementos */
+button {
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+}
+
+/* Especificamente para os botões de controle */
+.controls button {
+    position: relative !important;
+    z-index: 10000 !important;
+    pointer-events: auto !important;
+}
+
+/* Garantir que elementos de overlay não interfiram */
+.notification-overlay {
+    pointer-events: none !important;
+}
+
+.notification-overlay .notification {
+    pointer-events: auto !important;
+}
+
+/* Confetes não devem interferir nos cliques */
+.confetti {
+    pointer-events: none !important;
+    z-index: 1000 !important;
+}
+
+/* Fireworks não devem interferir nos cliques */
+.firework {
+    pointer-events: none !important;
+    z-index: 1000 !important;
+}
+
+
+
         body {
             font-family: 'Arial', sans-serif;
             background: transparent;
